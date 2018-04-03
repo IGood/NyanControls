@@ -1,5 +1,6 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
+using System.Windows.Markup;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
@@ -20,6 +21,9 @@ using System.Runtime.InteropServices;
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("ff4924d5-b91e-4cc0-80ff-1ffcebb28f17")]
+
+[assembly: XmlnsPrefix("https://github.com/IGood/NyanControls", "nyan")]
+[assembly: XmlnsDefinition("https://github.com/IGood/NyanControls", "NyanControls.Wpf")]
 
 // Version information for an assembly consists of the following four values:
 //

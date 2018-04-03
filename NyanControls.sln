@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NyanControls.Demo", "NyanControls\NyanControls.Demo.csproj", "{DF93AF7D-5040-4EC7-93BD-FCB2EFB9206D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NyanControls.Demo", "NyanControls.Demo\NyanControls.Demo.csproj", "{DF93AF7D-5040-4EC7-93BD-FCB2EFB9206D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NyanControls.Wpf", "NyanControls.Wpf\NyanControls.Wpf.csproj", "{FF4924D5-B91E-4CC0-80FF-1FFCEBB28F17}"
 EndProject

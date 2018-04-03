@@ -7,7 +7,7 @@
     using System.Windows.Media;
     using System.Windows.Media.Imaging;
 
-    public class StarField : Canvas
+    internal class StarField : Canvas
     {
         private const int StarSize = 8;
 

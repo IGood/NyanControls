@@ -8,7 +8,6 @@
                 <ResourceDictionary Source="Dump.xaml"/>
                 <ResourceDictionary Source="Msdn.xaml"/>
                 <ResourceDictionary Source="StackOverflow.xaml"/>
-                <ResourceDictionary Source="/NyanControls.Wpf;component/ProgressBar.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
