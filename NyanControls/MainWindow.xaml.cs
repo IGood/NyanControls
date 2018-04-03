@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace NyanControls
+namespace NyanControls.Demo
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -22,7 +22,21 @@ namespace NyanControls
     {
         public MainWindow()
         {
-            InitializeComponent();
+            this.InitializeComponent();
+        }
+
+        public static readonly DependencyProperty ProgressProperty = DependencyProperty.Register(
+            nameof(Progress), typeof(double), typeof(MainWindow), new PropertyMetadata(33.0));
+
+        public double Progress
+        {
+            get => (double)this.GetValue(ProgressProperty);
+            set => this.SetValue(ProgressProperty, value);
+        }
+
+        private void CommandBinding_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

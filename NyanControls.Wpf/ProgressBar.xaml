@@ -1,0 +1,90 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:gif="http://wpfanimatedgif.codeplex.com"
+                    xmlns:local="clr-namespace:NyanControls.Wpf">
+    <Style x:Key="NYAN_ProgressBar" TargetType="{x:Type ProgressBar}">
+        <Setter Property="OverridesDefaultStyle" Value="True"/>
+        <Setter Property="Height" Value="20"/>
+        <Setter Property="Padding" Value="0,-9.5"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="Background" Value="#FF003366"/>
+        <Setter Property="gif:ImageBehavior.AnimateInDesignMode" Value="True"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ProgressBar}">
+                    <ControlTemplate.Resources>
+                        <Style x:Key="STYLE_NyanGif" TargetType="{x:Type Image}">
+                            <Setter Property="Margin" Value="-26"/>
+                            <Setter Property="HorizontalAlignment" Value="Right"/>
+                            <Setter Property="VerticalAlignment" Value="Center"/>
+                            <Setter Property="Stretch" Value="Uniform"/>
+                            <!-- Desired height is 19, but Height needs to be 23 to actually render as 19? -->
+                            <Setter Property="Height" Value="23"/>
+                            <Setter Property="gif:ImageBehavior.AnimatedSource" Value="Images/nyan.gif"/>
+                        </Style>
+                    </ControlTemplate.Resources>
+                    <Grid x:Name="TemplateRoot">
+                        <!-- ProgressBar will observe this element's Width. -->
+                        <Border x:Name="PART_Track"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                Background="{TemplateBinding Background}">
+                            <local:StarField/>
+                        </Border>
+                        <!-- ProgressBar will modify this element's Width. -->
+                        <Grid x:Name="PART_Indicator" Margin="{TemplateBinding Padding}" Height="19"
+                              HorizontalAlignment="Left"
+                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
+                            <Grid.Background>
+                                <VisualBrush TileMode="Tile" ViewportUnits="Absolute" Viewport="0,0,16,19">
+                                    <VisualBrush.Visual>
+                                        <!-- Use a VisualBrush an Image instead of just an ImageBrush because we need to set BitmapScalingMode. -->
+                                        <Image Source="Images/rainbow.png" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+                                    </VisualBrush.Visual>
+                                </VisualBrush>
+                            </Grid.Background>
+                            <Grid.Triggers>
+                                <EventTrigger RoutedEvent="Loaded">
+                                    <BeginStoryboard>
+                                        <Storyboard TargetProperty="Background.Viewport">
+                                            <RectAnimationUsingKeyFrames RepeatBehavior="Forever" Duration="0:0:0.28">
+                                                <DiscreteRectKeyFrame KeyTime="0:0:0.14" Value="8,0,16,19" />
+                                            </RectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </Grid.Triggers>
+                            <Image x:Name="Nyan" Style="{StaticResource STYLE_NyanGif}"/>
+                        </Grid>
+                        <!-- ProgressBar will modify this element's Margin & OpacityMask. -->
+                        <Grid x:Name="PART_GlowRect"
+                              Width="{Binding ElementName=PART_Track, Path=ActualWidth, Mode=OneWay}"/>
+                        <Grid x:Name="IndeterminateStuff"
+                              Visibility="Collapsed"
+                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                              Margin="{Binding ElementName=PART_GlowRect, Path=Margin, Mode=OneWay}"
+                              Width="{Binding ElementName=PART_Track, Path=ActualWidth, Mode=OneWay}">
+                            <Grid Margin="{TemplateBinding Padding}" Height="19">
+                                <Image Style="{StaticResource STYLE_NyanGif}" HorizontalAlignment="Center"/>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Orientation" Value="Vertical">
+                            <Setter Property="LayoutTransform" TargetName="TemplateRoot">
+                                <Setter.Value>
+                                    <RotateTransform Angle="-90"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsIndeterminate" Value="True">
+                            <Setter TargetName="Nyan" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="IndeterminateStuff" Property="Visibility" Value="Visible"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
