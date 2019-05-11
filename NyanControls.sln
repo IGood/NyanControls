@@ -1,11 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2036
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NyanControls.Demo", "NyanControls.Demo\NyanControls.Demo.csproj", "{DF93AF7D-5040-4EC7-93BD-FCB2EFB9206D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NyanControls.Wpf", "NyanControls.Wpf\NyanControls.Wpf.csproj", "{FF4924D5-B91E-4CC0-80FF-1FFCEBB28F17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NyanControls 3.5", "NyanControls.WinForms\NyanControls 3.5.csproj", "{0D5F089D-17A1-4561-9B8B-66B6FB0E732F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NyanControls 4.0", "NyanControls.WinForms\NyanControls 4.0.csproj", "{83D868B3-DCF3-4BED-98BF-E9B42330A956}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{8ABEAC96-9A2E-4235-803E-4D5AC1115FE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{FF4924D5-B91E-4CC0-80FF-1FFCEBB28F17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF4924D5-B91E-4CC0-80FF-1FFCEBB28F17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF4924D5-B91E-4CC0-80FF-1FFCEBB28F17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D5F089D-17A1-4561-9B8B-66B6FB0E732F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D5F089D-17A1-4561-9B8B-66B6FB0E732F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D5F089D-17A1-4561-9B8B-66B6FB0E732F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D5F089D-17A1-4561-9B8B-66B6FB0E732F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83D868B3-DCF3-4BED-98BF-E9B42330A956}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83D868B3-DCF3-4BED-98BF-E9B42330A956}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83D868B3-DCF3-4BED-98BF-E9B42330A956}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83D868B3-DCF3-4BED-98BF-E9B42330A956}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ABEAC96-9A2E-4235-803E-4D5AC1115FE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ABEAC96-9A2E-4235-803E-4D5AC1115FE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ABEAC96-9A2E-4235-803E-4D5AC1115FE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ABEAC96-9A2E-4235-803E-4D5AC1115FE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
