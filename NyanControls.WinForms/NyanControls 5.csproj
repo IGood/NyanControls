@@ -4,7 +4,7 @@
     <TargetFramework>net5.0-windows</TargetFramework>
     <RootNamespace>NyanControls</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
-    <AssemblyName>NyanControls</AssemblyName>
+    <AssemblyName>NyanControls5</AssemblyName>
     <Description>Nyan Cat Windows Forms controls</Description>
     <Copyright>Copyright © 2021 Ian Good</Copyright>
     <PackageProjectUrl>https://github.com/IGood/NyanControls</PackageProjectUrl>
