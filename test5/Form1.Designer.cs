@@ -1,15 +1,14 @@
-﻿
-namespace test5
+﻿namespace test5
 {
 	partial class Form1
 	{
 		/// <summary>
-		///  Required designer variable.
+		/// Required designer variable.
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
 
 		/// <summary>
-		///  Clean up any resources being used.
+		/// Clean up any resources being used.
 		/// </summary>
 		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
 		protected override void Dispose(bool disposing)
@@ -24,32 +23,121 @@ namespace test5
 		#region Windows Form Designer generated code
 
 		/// <summary>
-		///  Required method for Designer support - do not modify
-		///  the contents of this method with the code editor.
+		/// Required method for Designer support - do not modify
+		/// the contents of this method with the code editor.
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
+			this.nyanProgressBar4 = new NyanControls.NyanProgressBar();
+			this.nyanProgressBar2 = new NyanControls.NyanProgressBar();
+			this.nyanProgressBar3 = new NyanControls.NyanProgressBar();
 			this.nyanProgressBar1 = new NyanControls.NyanProgressBar();
+			this.progressBar1 = new System.Windows.Forms.ProgressBar();
 			this.SuspendLayout();
+			// 
+			// propertyGrid1
+			// 
+			this.propertyGrid1.Dock = System.Windows.Forms.DockStyle.Left;
+			this.propertyGrid1.Location = new System.Drawing.Point(0, 0);
+			this.propertyGrid1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			this.propertyGrid1.Name = "propertyGrid1";
+			this.propertyGrid1.Size = new System.Drawing.Size(317, 508);
+			this.propertyGrid1.TabIndex = 2;
+			// 
+			// nyanProgressBar4
+			// 
+			this.nyanProgressBar4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.nyanProgressBar4.CausesValidation = false;
+			this.nyanProgressBar4.Location = new System.Drawing.Point(324, 192);
+			this.nyanProgressBar4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			this.nyanProgressBar4.MarqueeAnimationSpeed = 300;
+			this.nyanProgressBar4.Name = "nyanProgressBar4";
+			this.nyanProgressBar4.Size = new System.Drawing.Size(791, 82);
+			this.nyanProgressBar4.Step = 1;
+			this.nyanProgressBar4.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
+			this.nyanProgressBar4.TabIndex = 1;
+			this.nyanProgressBar4.TabStop = false;
+			this.nyanProgressBar4.Click += new System.EventHandler(this.nyanProgressBar3_Click);
+			// 
+			// nyanProgressBar2
+			// 
+			this.nyanProgressBar2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.nyanProgressBar2.CausesValidation = false;
+			this.nyanProgressBar2.Location = new System.Drawing.Point(324, 280);
+			this.nyanProgressBar2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			this.nyanProgressBar2.MarqueeAnimationSpeed = 300;
+			this.nyanProgressBar2.Name = "nyanProgressBar2";
+			this.nyanProgressBar2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.nyanProgressBar2.RightToLeftLayout = true;
+			this.nyanProgressBar2.Size = new System.Drawing.Size(791, 82);
+			this.nyanProgressBar2.Step = 1;
+			this.nyanProgressBar2.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
+			this.nyanProgressBar2.TabIndex = 1;
+			this.nyanProgressBar2.TabStop = false;
+			this.nyanProgressBar2.Click += new System.EventHandler(this.nyanProgressBar3_Click);
+			// 
+			// nyanProgressBar3
+			// 
+			this.nyanProgressBar3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.nyanProgressBar3.CausesValidation = false;
+			this.nyanProgressBar3.Location = new System.Drawing.Point(324, 14);
+			this.nyanProgressBar3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			this.nyanProgressBar3.Name = "nyanProgressBar3";
+			this.nyanProgressBar3.Size = new System.Drawing.Size(791, 82);
+			this.nyanProgressBar3.Step = 1;
+			this.nyanProgressBar3.TabIndex = 1;
+			this.nyanProgressBar3.TabStop = false;
+			this.nyanProgressBar3.Value = 4;
+			this.nyanProgressBar3.Click += new System.EventHandler(this.nyanProgressBar3_Click);
 			// 
 			// nyanProgressBar1
 			// 
-			this.nyanProgressBar1.Dock = System.Windows.Forms.DockStyle.Top;
-			this.nyanProgressBar1.Location = new System.Drawing.Point(0, 0);
-			this.nyanProgressBar1.MarqueeAnimationSpeed = 555;
+			this.nyanProgressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.nyanProgressBar1.CausesValidation = false;
+			this.nyanProgressBar1.Location = new System.Drawing.Point(324, 103);
+			this.nyanProgressBar1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
 			this.nyanProgressBar1.Name = "nyanProgressBar1";
-			this.nyanProgressBar1.Size = new System.Drawing.Size(800, 100);
-			this.nyanProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
-			this.nyanProgressBar1.TabIndex = 0;
+			this.nyanProgressBar1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.nyanProgressBar1.RightToLeftLayout = true;
+			this.nyanProgressBar1.Size = new System.Drawing.Size(791, 82);
+			this.nyanProgressBar1.Step = 1;
+			this.nyanProgressBar1.TabIndex = 1;
+			this.nyanProgressBar1.TabStop = false;
+			this.nyanProgressBar1.Value = 4;
+			this.nyanProgressBar1.Click += new System.EventHandler(this.nyanProgressBar3_Click);
+			// 
+			// progressBar1
+			// 
+			this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.progressBar1.Location = new System.Drawing.Point(324, 369);
+			this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			this.progressBar1.Name = "progressBar1";
+			this.progressBar1.Size = new System.Drawing.Size(791, 27);
+			this.progressBar1.TabIndex = 3;
+			this.progressBar1.Click += new System.EventHandler(this.nyanProgressBar3_Click);
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.AutoSize = true;
+			this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+			this.ClientSize = new System.Drawing.Size(1129, 508);
+			this.Controls.Add(this.progressBar1);
+			this.Controls.Add(this.propertyGrid1);
+			this.Controls.Add(this.nyanProgressBar4);
+			this.Controls.Add(this.nyanProgressBar2);
+			this.Controls.Add(this.nyanProgressBar3);
 			this.Controls.Add(this.nyanProgressBar1);
+			this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
 			this.Name = "Form1";
-			this.Text = "Form1";
+			this.Text = "test5";
 			this.ResumeLayout(false);
 
 		}
@@ -57,6 +145,10 @@ namespace test5
 		#endregion
 
 		private NyanControls.NyanProgressBar nyanProgressBar1;
+		private NyanControls.NyanProgressBar nyanProgressBar2;
+		private NyanControls.NyanProgressBar nyanProgressBar3;
+		private NyanControls.NyanProgressBar nyanProgressBar4;
+		private System.Windows.Forms.PropertyGrid propertyGrid1;
+		private System.Windows.Forms.ProgressBar progressBar1;
 	}
 }
-

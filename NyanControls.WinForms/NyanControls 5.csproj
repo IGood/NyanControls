@@ -26,6 +26,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Resources\NyanProgressBar.bmp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\NyanProgressBar.bmp" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Properties\Resources 5.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

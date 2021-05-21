@@ -15,7 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NyanControls 5", "NyanControls.WinForms\NyanControls 5.csproj", "{0A13780A-BF8E-4A76-98AC-C961A3675FD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test5", "test5\test5.csproj", "{A32C6037-704B-477F-BD11-3D5BE33602A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "test5", "test5\test5.csproj", "{A32C6037-704B-477F-BD11-3D5BE33602A7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0A13780A-BF8E-4A76-98AC-C961A3675FD2} = {0A13780A-BF8E-4A76-98AC-C961A3675FD2}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
