@@ -14,7 +14,7 @@ namespace NyanControls
 	/// <summary>
 	/// Represents a Windows progress bar control.
 	/// </summary>
-	[ToolboxBitmap(typeof(NyanProgressBar), "Properties.Resources.NyanProgressBar")]
+	[ToolboxBitmap(typeof(NyanProgressBar), "Resources.NyanProgressBar.bmp")]
 	public class NyanProgressBar : ProgressBar
 	{
 		#region Internal Classes
