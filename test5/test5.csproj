@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NyanControls.WinForms\NyanControls 5.csproj" />
+    <Reference Include="NyanControls5">
+      <HintPath>..\NyanControls.WinForms\bin\Release\net5.0-windows\NyanControls5.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
